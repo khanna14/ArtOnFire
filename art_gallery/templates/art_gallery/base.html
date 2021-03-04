@@ -20,25 +20,35 @@
 <body>
     {%load static%}
     <Style>
-        body{
+        body {
             font-family: 'Lobster', cursive;
-            font-size:80 ;
+            font-size: 10;
         }
+
+        .navbar-brand {
+            font-size: 30px;
+        }
+
+        .nav-item {
+            font-size: 20px;
+        }
+    {%block style%}{%endblock%}
+    
     </Style>
 
 
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #FFFFFF;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="https://th.bing.com/th/id/R4cd0c3a5114ffbedacb35ce580b187a1?rik=TaHpOq5pjX%2fD5A&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2f0%2f3%2ff%2f9%2f12203955151431451966fire%2520symbol.svg&ehk=96OJvE7d7j8Lzil%2bJC1yR8sxVun%2fbAgjBcpIMENafuo%3d&risl=&pid=ImgRaw" alt="" width="30" height="40">
-                ArtonFire.com  
+                <img class="m-2" src="{%static 'art_gallery/OIP.jpg'%}" alt="" width="30" height="40">
+                ArtonFire.com
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -50,7 +60,7 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn " type="submit">Search</button>
                 </form>
             </div>
         </div>
