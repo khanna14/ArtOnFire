@@ -1,0 +1,1 @@
+web: gunicorn Artonfire.wsgi --log-file -
